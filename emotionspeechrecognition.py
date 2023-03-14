@@ -21,7 +21,7 @@ def main():
 
 @st.cache(show_spinner=False)
 def get_file_content_as_string(path):
-    url = 'https://raw.githubusercontent.com/grapemello/speech-emotion-recognition/main/' + path
+    url = 'https://raw.githubusercontent.com/pearguacamole/Speech-emotion-recognition/main/' + path
     response = urllib.request.urlopen(url)
     return response.read().decode("utf-8")
 
